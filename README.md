@@ -3,6 +3,8 @@ High-Concurrency Scalable Cinema Platform
 
 A Spring Boot microservice designed to handle high-volume ticket bookings with real-time inventory management, tiered discount strategies, and robust concurrency control.
 
+**Point to Note** : Since this is not a complete application, different microservices such as BookingService and PartnerService have been created as a separate modules. In original scenario, these will be SEPARATE MICROSERVICES. 
+
 🚀 **Key Technical Features**
 Concurrency Control: Implemented Optimistic Locking using JPA @Version to prevent double-booking of seats in high-traffic scenarios.
 
