@@ -1,0 +1,43 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '3.2.4'
+    id 'io.spring.dependency-management' version '1.1.4'
+}
+
+group = 'org.booking'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+    // 1. Web: For REST Controllers and JSON handling
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    // 2. Persistence: For JPA, Hibernate, and Database interactions
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+    // 3. Driver: For connecting to your Docker PostgreSQL instance
+    runtimeOnly 'org.postgresql:postgresql'
+
+    // 4. Validation: For ensuring API request data (Records) is valid
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+
+    // This tells Gradle to include the commons module as a library
+    implementation project(':commons')
+
+    implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+
+    // 5. Utility: Ensuring Java 8+ Date/Time works correctly with JSON
+    implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310'
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+test {
+    useJUnitPlatform()
+}
