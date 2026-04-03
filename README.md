@@ -35,3 +35,12 @@ Framework: Spring Boot 3.x, Spring Data JPA
 Database: PostgreSQL / H2 (Development)
 
 Tools: Maven/Gradle, JUnit 5, Mockito
+
+HLD : <img width="803" height="679" alt="Screenshot 2026-04-01 at 3 34 24 PM" src="https://github.com/user-attachments/assets/38f3295b-c8fb-468c-8c8f-523000fffcb4" />
+
+Non Functional Arch : <img width="953" height="600" alt="Screenshot 2026-04-01 at 4 38 47 PM" src="https://github.com/user-attachments/assets/77545b72-b2b7-4f5b-a85a-428c7f814d37" />
+
+ERD : <img width="950" height="535" alt="Screenshot 2026-04-01 at 5 32 07 PM" src="https://github.com/user-attachments/assets/e3329880-7718-4edb-88f0-58f2b77e74a5" />
+
+
+
